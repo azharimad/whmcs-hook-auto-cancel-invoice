@@ -46,7 +46,7 @@ function cronAutoCancelInvoice()
 	/**
 	 * while data result
 	 */
-  while($row = mysql_fetch_assoc($result))
+  while($row = mysqli_fetch_assoc($result))
   {
     $data['invoiceid'][] = $row['id'];
   }
